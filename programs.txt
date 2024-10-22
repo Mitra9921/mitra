@@ -1,0 +1,109 @@
+<html>
+<head>
+<script>
+ var a=5,b=10;
+ document.write("Addition="+(a+b));
+ document.write("<br>"+"Subtraction="+(a-b));
+ document.write("<br>"+"Multi="+(a*b));
+ document.write("<br>"+"Division="+(a/b));
+</script>
+</head>
+<body>
+</body>
+</html>
+Armstrong Number :-
+<html>
+<head>
+<script>
+ var n=parseInt(prompt("Enter any no="));
+ var t=n;
+ var r,s=0;
+while(n!=0)
+{
+ r=n%10; 
+ s=s+(r*r*r);
+ n=Math.floor(n/10);
+}
+if(s==t)
+alert(t+" is Armstrong ");
+else
+alert(t+" is Not Armstrong ");
+</script>
+</head>
+</hmtl>
+Date :-
+<html>
+<body>
+<script>
+var d=new Date();
+document.write(d.getMonth());
+</script>
+</body>
+</html>
+String :-
+<script>
+var str="SANGOLA COLLEGE";
+document.write(str.toLowerCase());
+</script>
+Sum of Digit :-
+<script>
+function sum()
+{
+var n=parseInt(prompt("enter any no."));
+var r,sum=0;
+while(n>0)
+{
+r=n%10;
+sum=sum+r;
+n=parseInt(n/10);
+}
+document.write(sum);
+}
+</script>
+<body>
+<button onclick="sum()">sum of digit</button>
+</body>
+Pattern-
+<html>
+<body>
+<script>
+function pat()
+{
+var i,j,s,k=5;
+for(i=1;i<=5;i++)
+{
+ for(s=k;s>=1;s--)
+ {
+ document.write("&nbsp");
+ }k--;
+for(j=1;j<=i;j++)
+{
+document.write(j);
+}
+document.write("<br>");
+}
+}
+</script>
+<input type="button" value="pattern" onclick="pat();"></input>
+</body>
+</html>
+Pattern :-
+<html>
+<head>
+<script>
+var i,j,k;
+k=1; //Ist attempt
+for(i=1;i<=5;i++) //lines
+{
+ for(j=1;j<=k;j++) //logic
+ {
+ document.write(j);
+ }
+ k++; 
+ document.write("<br>");
+} 
+</script>
+</head>
+<body>
+</body>
+</html>
