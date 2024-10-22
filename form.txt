@@ -1,0 +1,34 @@
+<html>
+<head>
+<title>Text Input Control</title>
+</head>
+<body>
+<form style="background-color:olive;width:50%"><fieldset><legend>Std 
+info</legend>
+First name: <input type="text" name="first_name" maxlength="5" 
+size="20"><br>
+Last name: <input type="text" name="last_name" /><br>
+Upload photo <input type="image" src="" height=100 width=70><br>
+<input type="button" value="Save"><br>
+User ID : <input type="text" name="user_id" /> <br>
+Password: <input type="password" name="password" /><br>
+<textarea rows="5" cols="50" name="description"> <br>
+Enter description here...
+</textarea><br>
+<input type="radio" name="subject" value="maths"> Maths
+<input type="radio" name="subject" value="physics"> Physics
+<input type="checkbox" name="subject" value="maths"> Maths
+<input type="checkbox" name="subject" value="physics"> Physics<br>
+Choose special Subject
+<select name="dropdown">
+<option>Maths</option>
+<option>Physics</option>
+</select>
+<input type="file">
+<input type="hidden" name="pagename" value="10" />
+<input type="submit" name="submit" value="Submit" />
+<input type="reset" name="reset" value="Reset" />
+</fieldset>
+</form>
+</body>
+</html>
