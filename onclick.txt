@@ -1,0 +1,48 @@
+<html>
+<head>
+<script>
+function palin()
+{
+ var n=parseInt(prompt("Enter any No="));
+ var s=0,r,t=n;
+ while(n!=0)
+ {
+ r=n%10;
+ s=s*10+r;
+ n=parseInt(n/10);
+ }
+ if(s==t)
+ alert(t+" is Palindrome");
+ else
+ alert(t+" is NOT Palindrome");
+}
+function facto()
+{
+ var n=parseInt(prompt("Enter any no= "));
+ var f=1,t=n;
+ while(n!=1)
+ {
+ f=f*n;
+ n--; 
+ }
+ alert("Factorial of "+t+" is="+f);
+}
+function arm()
+{
+ alert("Armstrong");
+}
+</script>
+</head>
+<body>
+<form>
+<table border=2>
+<tr><td><input type="button" value="Palindrome" 
+onClick="palin()"></td></tr>
+<tr><td><input type="button" value="Factorial" 
+onClick="facto()"></td></tr>
+<tr><td><input type="button" value="Armstrong" 
+onClick="arm()"></td></tr>
+</table>
+</form>
+</body>
+</html>
